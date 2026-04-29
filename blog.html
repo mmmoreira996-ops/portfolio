@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artigos — Marcelo Moreira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">MM</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#sobre" data-pt="Sobre" data-en="About">Sobre</a></li>
+        <li><a href="index.html#resultados" data-pt="Resultados" data-en="Results">Resultados</a></li>
+        <li><a href="index.html#experiencia" data-pt="Experiência" data-en="Experience">Experiência</a></li>
+        <li><a href="index.html#artigos" data-pt="Artigos" data-en="Articles">Artigos</a></li>
+        <li><a href="index.html#contato" data-pt="Contato" data-en="Contact">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" onclick="toggleLang()">EN</button>
+        <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="blog-hero">
+    <div class="container">
+      <a href="index.html" class="back-link" data-pt="← Voltar ao portfólio" data-en="← Back to portfolio">← Voltar ao portfólio</a>
+      <span class="section-tag" data-pt="Conhecimento Compartilhado" data-en="Shared Knowledge">Conhecimento Compartilhado</span>
+      <h1 data-pt="Artigos" data-en="Articles">Artigos</h1>
+      <p data-pt="Reflexões sobre gestão de processos, dados, Lean Six Sigma e melhoria contínua na indústria." data-en="Insights on process management, data, Lean Six Sigma, and continuous improvement in industry.">Reflexões sobre gestão de processos, dados, Lean Six Sigma e melhoria contínua na indústria.</p>
+    </div>
+  </section>
+
+  <section class="blog-list">
+    <div class="container">
+
+      <div class="blog-filters">
+        <button class="filter-btn active" onclick="filterPosts(this, 'all')" data-pt="Todos" data-en="All">Todos</button>
+        <button class="filter-btn" onclick="filterPosts(this, 'power-bi')" data-pt="Power BI" data-en="Power BI">Power BI</button>
+        <button class="filter-btn" onclick="filterPosts(this, 'lean')" data-pt="Lean Six Sigma" data-en="Lean Six Sigma">Lean Six Sigma</button>
+        <button class="filter-btn" onclick="filterPosts(this, 'processos')" data-pt="Processos" data-en="Processes">Processos</button>
+      </div>
+
+      <div class="blog-grid" id="blogGrid">
+
+        <a href="artigos/power-bi-gestao-indicadores.html" class="blog-card" data-category="power-bi">
+          <div class="blog-card-top">
+            <span class="article-tag">Power BI</span>
+            <span class="blog-date" data-pt="Abr 2026" data-en="Apr 2026">Abr 2026</span>
+          </div>
+          <h2 data-pt="Como o Power BI transformou a gestão de indicadores na indústria" data-en="How Power BI transformed indicator management in the industry">Como o Power BI transformou a gestão de indicadores na indústria</h2>
+          <p data-pt="A padronização de dashboards reduziu 80% do tempo de preparação de reuniões. Veja como estruturar indicadores operacionais para gerar decisões mais rápidas e confiáveis." data-en="Standardizing dashboards reduced meeting preparation time by 80%. See how to structure operational indicators for faster and more reliable decisions.">A padronização de dashboards reduziu 80% do tempo de preparação de reuniões. Veja como estruturar indicadores operacionais para gerar decisões mais rápidas e confiáveis.</p>
+          <span class="article-read" data-pt="Ler artigo →" data-en="Read article →">Ler artigo →</span>
+        </a>
+
+        <a href="artigos/pdca-na-pratica.html" class="blog-card" data-category="processos">
+          <div class="blog-card-top">
+            <span class="article-tag" data-pt="Melhoria Contínua" data-en="Continuous Improvement">Melhoria Contínua</span>
+            <span class="blog-date" data-pt="Mar 2026" data-en="Mar 2026">Mar 2026</span>
+          </div>
+          <h2 data-pt="PDCA na prática: como aplicar em processos industriais reais" data-en="PDCA in practice: how to apply it in real industrial processes">PDCA na prática: como aplicar em processos industriais reais</h2>
+          <p data-pt="O ciclo PDCA vai além da teoria. Veja um caso real de redução de não conformidades em uma linha de produção, com planos de ação estruturados e métricas de acompanhamento." data-en="The PDCA cycle goes beyond theory. See a real case of non-conformance reduction in a production line, with structured action plans and tracking metrics.">O ciclo PDCA vai além da teoria. Veja um caso real de redução de não conformidades em uma linha de produção, com planos de ação estruturados e métricas de acompanhamento.</p>
+          <span class="article-read" data-pt="Ler artigo →" data-en="Read article →">Ler artigo →</span>
+        </a>
+
+        <a href="artigos/lean-six-sigma-resultados.html" class="blog-card" data-category="lean">
+          <div class="blog-card-top">
+            <span class="article-tag">Lean Six Sigma</span>
+            <span class="blog-date" data-pt="Fev 2026" data-en="Feb 2026">Fev 2026</span>
+          </div>
+          <h2 data-pt="Lean Six Sigma: do Green Belt aos resultados reais em 6 meses" data-en="Lean Six Sigma: from Green Belt to real results in 6 months">Lean Six Sigma: do Green Belt aos resultados reais em 6 meses</h2>
+          <p data-pt="Como aplicar o DMAIC para reduzir desperdícios e elevar a eficiência operacional. Um guia prático baseado em experiência real na indústria de motores elétricos." data-en="How to apply DMAIC to reduce waste and increase operational efficiency. A practical guide based on real experience in the electric motor industry.">Como aplicar o DMAIC para reduzir desperdícios e elevar a eficiência operacional. Um guia prático baseado em experiência real na indústria de motores elétricos.</p>
+          <span class="article-read" data-pt="Ler artigo →" data-en="Read article →">Ler artigo →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p data-pt="© 2026 Marcelo Moreira. Todos os direitos reservados." data-en="© 2026 Marcelo Moreira. All rights reserved.">© 2026 Marcelo Moreira. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function filterPosts(btn, category) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.blog-card').forEach(card => {
+        card.style.display = (category === 'all' || card.dataset.category === category) ? 'flex' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>

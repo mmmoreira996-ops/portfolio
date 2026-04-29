@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDCA na prática — Marcelo Moreira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../artigo.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">MM</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#sobre">Sobre</a></li>
+        <li><a href="../blog.html">Artigos</a></li>
+        <li><a href="../index.html#contato">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</button>
+      </div>
+    </div>
+  </nav>
+
+  <article class="artigo">
+    <div class="artigo-container">
+
+      <header class="artigo-header">
+        <a href="../blog.html" class="back-link">← Voltar aos artigos</a>
+        <span class="article-tag">Melhoria Contínua</span>
+        <h1>PDCA na prática: como aplicar em processos industriais reais</h1>
+        <p class="artigo-subtitle">O ciclo PDCA vai além da teoria. Veja um caso real de redução de não conformidades em uma linha de produção, com planos de ação estruturados e métricas de acompanhamento.</p>
+        <div class="artigo-meta">
+          <span>Marcelo Moreira</span>
+          <span>·</span>
+          <span>Março 2026</span>
+          <span>·</span>
+          <span>6 min de leitura</span>
+        </div>
+      </header>
+
+      <div class="artigo-body">
+
+        <p>O PDCA (Plan-Do-Check-Act) é provavelmente a ferramenta de melhoria contínua mais conhecida na indústria. E também uma das mais mal aplicadas. Na prática, o que vejo com frequência são ciclos incompletos: planos que nunca saem do papel, ações implementadas sem verificação, e problemas que voltam porque a causa raiz nunca foi tratada de verdade.</p>
+
+        <p>Neste artigo, compartilho como aplicamos o PDCA na gestão de não conformidades na área de montagem de motores elétricos — e os resultados concretos que alcançamos.</p>
+
+        <h2>O contexto: não conformidades em série</h2>
+
+        <p>A área apresentava um índice elevado de reprovações nas tratativas de não conformidades. Os problemas eram recorrentes, os planos de ação não fechavam, e a liderança perdia confiança no processo. Era hora de estruturar o ciclo de verdade.</p>
+
+        <h2>PLAN — Entender antes de agir</h2>
+
+        <p>O primeiro erro mais comum é pular direto para a solução. Antes de propor qualquer ação, fizemos:</p>
+        <ul>
+          <li>Estratificação das não conformidades por tipo, frequência e impacto</li>
+          <li>Análise de causa raiz com Diagrama de Ishikawa e 5 Porquês</li>
+          <li>Priorização pelo Diagrama de Pareto — 20% das causas geravam 80% dos problemas</li>
+        </ul>
+
+        <h2>DO — Implementar com responsável e prazo</h2>
+
+        <p>Cada ação recebeu: o quê, quem, quando e como verificar. Usamos o 5W2H como estrutura padrão. Sem responsável nomeado, a ação não existe.</p>
+
+        <h2>CHECK — Medir, não presumir</h2>
+
+        <p>Definimos indicadores de eficácia para cada ação. A verificação era feita em 30, 60 e 90 dias. Se o indicador não melhorou, a ação voltava para revisão — sem exceção.</p>
+
+        <h2>ACT — Padronizar o que funcionou</h2>
+
+        <p>As ações eficazes foram incorporadas aos procedimentos operacionais. O que não funcionou virou aprendizado documentado para os próximos ciclos.</p>
+
+        <h2>O resultado</h2>
+
+        <p>Em 12 meses de ciclos estruturados: <strong>redução de 90% no índice de reprovação</strong> nas tratativas de não conformidades. Mais importante: os problemas pararam de voltar.</p>
+
+        <div class="artigo-cta">
+          <p>Quer estruturar a gestão de não conformidades na sua operação?</p>
+          <a href="../index.html#contato" class="btn btn-primary">Entre em Contato</a>
+        </div>
+
+      </div>
+
+      <footer class="artigo-footer">
+        <div class="author-card">
+          <div class="author-photo">MM</div>
+          <div>
+            <strong>Marcelo Moreira</strong>
+            <p>Supervisor de Processos | BI & Analytics | Lean Six Sigma</p>
+            <a href="https://www.linkedin.com/in/marcelo-moura-mm" target="_blank">LinkedIn →</a>
+          </div>
+        </div>
+        <a href="../blog.html" class="back-link">← Ver todos os artigos</a>
+      </footer>
+
+    </div>
+  </article>
+
+  <script src="../script.js"></script>
+</body>
+</html>
