@@ -60,20 +60,22 @@ document.querySelectorAll('.nav-links a').forEach(a => {
   });
 });
 
-// Fade-in sections on scroll
-const sections = document.querySelectorAll('section');
-const fadeObs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.style.opacity = '1';
-      e.target.style.transform = 'translateY(0)';
-    }
-  });
-}, { threshold: 0.08 });
+// Fade-in sections on scroll (only on index page)
+if (document.querySelector('.hero')) {
+  const sections = document.querySelectorAll('section');
+  const fadeObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.08 });
 
-sections.forEach(s => {
-  s.style.opacity = '0';
-  s.style.transform = 'translateY(24px)';
-  s.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
-  fadeObs.observe(s);
-});
+  sections.forEach(s => {
+    s.style.opacity = '0';
+    s.style.transform = 'translateY(24px)';
+    s.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
+    fadeObs.observe(s);
+  });
+}
